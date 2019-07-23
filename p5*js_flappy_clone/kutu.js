@@ -21,7 +21,7 @@ function kutu(){
 
       return true;
     }
-    if(kus.x > this.x-10 && kus.x < this.x+this.width-10 && kus.y > 490-this.alt && kus.y<490  ){
+    if(kus.x > this.x-10 && kus.x < this.x+this.width && kus.y >490-this.alt-kus.height && kus.y<490  ){
 
       return true;
     }
@@ -32,7 +32,3 @@ function kutu(){
 
   }
 
-
-
-
-}
