@@ -10,7 +10,6 @@ var skor;
 var kutular=[];
 var oyunBitti;
 
-
 function preload() {
   arkaplan=loadImage('https://i.hizliresim.com/2OjL2O.png');
   zemin=loadImage('https://i.hizliresim.com/kME4g7.png');
@@ -28,6 +27,18 @@ function setup() {
   zeminX=0;
   zeminHiz=3;
   oyunBitti=false;
+  oyunaBasla=false;
+
+}
+function restart(){
+  skor=0;
+  oyunBitti=false;
+  kus.x=width/2-40;
+  kus.y=height/2-40;
+  kus.surat=-10;
+  kus.aci=90;
+  kutular=[];
+  kutular.push(new kutu);
 
 }
 function draw(){
@@ -69,12 +80,16 @@ function draw(){
     if(!oyunBitti){
       kus.zipla();
     }
+    if(oyunBitti){
+      restart();
+    }
   }
   function oyunSonu(){
     kus.surat=10;
     zeminHiz=0;
     for (var i = 0; i <kutular.length; i++) {
       kutular[i].hiz=0;
+
 
     }
     oyunBitti=true;
