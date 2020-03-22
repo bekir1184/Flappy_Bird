@@ -15,7 +15,7 @@ function preload() {
   zemin=loadImage('https://i.hizliresim.com/kME4g7.png');
   kusImg=loadImage('https://i.hizliresim.com/jqB08m.png');
   kutuDuz=loadImage('https://i.hizliresim.com/BOvEnv.png');
-  kutuTers=loadImage('https://i.hizliresim.com/gP2nGR.png');
+  kutuTers=loadImage('https://i.hizliresim.com/1xST3j.png');
 
 }
 
